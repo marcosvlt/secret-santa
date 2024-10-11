@@ -20,7 +20,19 @@ function add() {
 function draw() {
 
     shuffle(friends);
-    console.log(friends)
+    let draw = document.getElementById('draw-list');
+
+    for (let index = 0; index < friends.length; index++) {
+        
+        if (index == friends.length  - 1)
+        {
+            draw.innerHTML = draw.innerHTML + friends[index] + '=>' + friends[0] + '<br>';
+
+        } else {
+            draw.innerHTML = draw.innerHTML + friends[index] + '=>' + friends[index + 1] + '<br>';
+        }
+        
+    }
     
     
 }
