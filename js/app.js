@@ -48,3 +48,10 @@ function shuffle(friends) {
             [friends[indiceAleatorio], friends[indice - 1]];
     }
 }
+
+function restart() {
+    friends = [];
+    document.getElementById('friends_list').innerHTML = '';
+    document.getElementById('draw-list').innerHTML = '';
+    
+}
