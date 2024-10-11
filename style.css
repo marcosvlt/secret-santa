@@ -1,0 +1,114 @@
+/* General reset */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Body styles */
+body {
+  background-color: #f7f7f7; /* Light gray background */
+  color: #333;
+}
+
+/* Main content styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for contrast */
+}
+
+/* Section title styles */
+.section__title {
+  font-size: 2.5rem;
+  color: #ff5733; /* Festive red */
+  margin-bottom: 20px;
+}
+
+.section__title span {
+  color: #f1c40f; /* Bright gold accent */
+}
+
+/* Content styles */
+.content {
+  position: relative;
+}
+
+/* Form styles */
+.form {
+  margin: 20px 0;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff5733; /* Red border */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.primary {
+  background-color: #ff5733; /* Primary button color */
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #f1c40f; /* Secondary button color */
+  color: #333;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+/* Result section styles */
+.section--results {
+  margin-top: 20px;
+}
+
+.friends__title,
+.prizeDraw__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff5733; /* Title color */
+}
+
+.friends__container,
+.prizeDraw__container {
+  border: 2px dashed #ff5733; /* Dashed border for results */
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ffe5b4; /* Light yellow background */
+  margin-top: 10px;
+}
+
