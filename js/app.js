@@ -4,6 +4,11 @@ function add() {
     let friend = document.getElementById('friend-name');
     let friendsList = document.getElementById('friends_list');
 
+    if (friend.value == ''){
+        alert("Insert friend's name");
+        return;
+    }
+
     friends.push(friend.value);
 
     if (friendsList.textContent == ''){
