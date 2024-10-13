@@ -8,8 +8,16 @@ function add() {
         alert("Insert friend's name");
         return;
     }
+       
 
-    friends.push(friend.value);
+    if (nameExists(friend.value)) {
+        alert(`${friend.value} already exists in the list.`);
+        return;
+    } else {
+        friends.push(friend.value);
+    }
+    
+
 
     if (friendsList.textContent == ''){
         friendsList.textContent = friend.value;        
@@ -23,6 +31,13 @@ function add() {
 }
 
 function draw() {
+
+    if (friends.length < 4){
+        alert("add at least 4 friens");
+        return;
+    }
+
+
 
     shuffle(friends);
     let draw = document.getElementById('draw-list');
@@ -59,4 +74,8 @@ function restart() {
     document.getElementById('friends_list').innerHTML = '';
     document.getElementById('draw-list').innerHTML = '';
     
+}
+
+function nameExists(name) {
+    return friends.some(existingName => existingName.localeCompare(name, undefined, { sensitivity: 'base' }) === 0);
 }
